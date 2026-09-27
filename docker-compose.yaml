@@ -12,7 +12,8 @@ services:
       - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
       - N8N_HOST=${N8N_HOST}
       - N8N_PROTOCOL=https
-      - WEBHOOK_URL=https://${N8N_HOST}/
+      - N8N_WEBHOOK_URL=https://${N8N_HOST}/
+      - N8N_PROXY_HOPS=1
       - N8N_PORT=5678
       - GENERIC_TIMEZONE=${TZ:-America/Cancun}
       - TZ=${TZ:-America/Cancun}
